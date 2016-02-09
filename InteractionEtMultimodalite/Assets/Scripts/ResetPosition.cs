@@ -12,10 +12,8 @@ public class ResetPosition : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.R)) {
-			transform.position = startPosition;
-			transform.rotation = startRotation;
-		}
+	public void reset() {
+		transform.position = startPosition;
+		transform.rotation = startRotation;
 	}
 }
